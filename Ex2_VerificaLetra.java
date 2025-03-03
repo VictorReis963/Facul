@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class VerificaLetra {
+public class EX2_VerificaLetra {
     public static void main(String[] args) {
         //cria um objeto para entrada do usuario
         Scanner scanner = new Scanner(System.in);
