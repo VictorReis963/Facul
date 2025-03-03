@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex3_Maior {
+public class Ex3_maior {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // inicia as varivais como o infinito oposto
