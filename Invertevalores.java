@@ -24,4 +24,5 @@ public class Invertevalores {
         // Fechando o scanner
         scanner.close();
     }
-}
+}// como solução do "para pensar..." possivelmente usando um try-catch pra avisar o erro ao úsuario
+// ou inserir um loop com a inserção valida como codição de saida 
