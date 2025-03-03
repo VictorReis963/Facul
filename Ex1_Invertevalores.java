@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Invertevalores {
+public class Ex1_Invertevalores {
     public static void main(String[] args) {
         // Cria um objeto Scanner para entrada do usuário
         Scanner scanner = new Scanner(System.in);
