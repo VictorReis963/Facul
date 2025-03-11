@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <stdlib.h>
+#include <sys/wait.h>
 
 int main() {
     pid_t pid = fork();
@@ -11,18 +12,18 @@ int main() {
         return 1;
     } 
     else if (pid == 0) {
-        int c;
+        int c=0;
         while (c!=4){
             printf( "caneta Azul");
             c++;
-            sleep(10);
+            sleep(2);
         }
         printf("Eu sou o processo filho, meu PID é %d\n", getpid());
          // Child process exits
          exit(0);
     } 
     else {
-        Wait(NULL);
+        wait(NULL);
         printf("Eu sou o processo pai, meu PID é %d. E criei um Lerdo filho com PID %d \n", getpid(), pid);
     }
 
