@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+
+
+
+public class palindromo{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("digite a frase, please!");
+        String texto = scanner.nextLine();
+
+        if (texto (" ")){
+            System.out.print("é um palindromo");
+        }
+        else{
+            System.out.print("não é um palindromo");
+        }
+
+
+        scanner.close();
+
+    }
+}
