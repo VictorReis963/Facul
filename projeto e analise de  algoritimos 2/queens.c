@@ -1,24 +1,27 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
-
+int N=8;
 bool esta_salva(char tabuleiro[][N], int linha, int coluna) {
     int i, j;
     
     // Verifica a linha à esquerda
-    for (i = 0; i < coluna; i++) 
+    for (i = 0; i < coluna; i++){ 
         if (tabuleiro[linha][i] == 'Q') 
             return false;
+    }
     
     // Verifica a diagonal superior esquerda
-    for (i = linha, j = coluna; i >= 0 && j >= 0; i--, j--)
+    for (i = linha, j = coluna; i >= 0 && j >= 0; i--, j--){
         if (tabuleiro[i][j] == 'Q') 
             return false;
-    
+    }
     // Verifica a diagonal inferior esquerda
-    for (i = linha, j = coluna; i < N && j >= 0; i++, j--)
+    for (i = linha, j = coluna; i < N && j >= 0; i++, j--){
         if (tabuleiro[i][j] == 'Q') 
             return false;
+    }
     
     return true;
 }
@@ -42,8 +45,18 @@ void cria_tabuleiro(char tabuleiro[][N]) {
         }
     }
 }
+void mostra_matriz(char tabuleiro[][N]) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            printf("%c ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
 
 int main() {
+    int N=8;
     char tabuleiro[N][N];
     memset(tabuleiro, '-', sizeof(tabuleiro));
     
