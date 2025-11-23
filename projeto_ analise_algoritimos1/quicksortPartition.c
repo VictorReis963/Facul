@@ -8,9 +8,10 @@ int swap(int *a, int *b){
     *b= temp;
     
 }
-
+// a função do partition e reorganizar o vetor separando os elementos dentro
+//do proprio vetor em menores e maiores que o pivot
 int partition(int v[], int inicio,int fim){
-   int pivo= v[fim];
+   int pivo= v[fim]; // pivo escolhido = ultimo elemento (tem vario tipos de escolha)
    int i= inicio-1;//posição dos menores
    
 
@@ -19,9 +20,6 @@ int partition(int v[], int inicio,int fim){
        if (v[j] <= pivo){ //se V[j] for menor que pivot vai para equerda
            i++;
            swap( &v[j], &v[i]); // troca elementos
-           
-           
-           
            
        }
    }
