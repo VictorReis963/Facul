@@ -39,6 +39,7 @@ int main(){
 
     heapSort(v, n);
 
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++){
         printf("%d ", v[i]);
+    }
 }
