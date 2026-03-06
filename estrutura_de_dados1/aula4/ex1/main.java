@@ -7,8 +7,8 @@ public class main{
 
         Scanner s = new Scanner(System.in);
         String texto= s.nextLine();
-        Palindromo.verifica(texto);
-        
+        Palindromo p = new Palindromo();
+        p.verifica(texto);
         s.close();
     }
 }
