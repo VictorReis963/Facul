@@ -1,0 +1,8 @@
+(chess ("tcbdrbct" "pppppppp" 8 8 8 8 "PPPPPPPP" "TCBDRBCT"))
+(defun c:SOMA ( / num1 num2 resultado)
+  (setq num1 (getreal "\nDigite o primeiro número: "))
+  (setq num2 (getreal "\nDigite o segundo número: "))
+  (setq resultado (+ num1 num2))
+  (princ (strcat "\nO resultado da soma é: " (rtos resultado)))
+  (princ)
+)

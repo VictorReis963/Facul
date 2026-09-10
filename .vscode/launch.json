@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "jarvas",
+            "request": "launch",
+            "mainClass": "jarvas",
+            "projectName": "Facul_784ddedd"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "main",
