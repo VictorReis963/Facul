@@ -1,4 +1,4 @@
-package BST;
+package BST.ex1;
 
 public class Node {
     String data;

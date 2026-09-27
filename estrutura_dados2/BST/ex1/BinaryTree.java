@@ -1,4 +1,5 @@
-package BST;
+package BST.ex1;
+
 public class BinaryTree {
     protected Node root;
 

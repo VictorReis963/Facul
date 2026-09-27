@@ -1,3 +1,4 @@
+package BST.ex1;
 /*
  * Victor Reis da Silva  RA: 10420297
  * REFERENCIAS CONSULTADAS:

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "BST.Main",
+            "projectName": "Facul_784ddedd"
+        },
+        {
+            "type": "java",
             "name": "jarvas",
             "request": "launch",
             "mainClass": "jarvas",
